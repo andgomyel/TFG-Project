@@ -1,6 +1,9 @@
 # TFG-Project
 This git contains the Final Project for Robotics Engineering Degree, which implements a Multi-Robot System solution to perform environment efficient exlploration and mapping, as well as real-time object detection.
 
+# Index
+- Intro
+- Uso de paquetes de ros para la navegación, mapeado... (poner los roslaunch en plan bonito y explicar qué lanza cada uno, quizá en un apartado de cómo usar)
 
 # Related features installation
 - darknet_ros
