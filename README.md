@@ -27,6 +27,7 @@ This project was developed as my Final Project in Robots Engineering Degree in t
 - Se ha creado un entorno (.world) basado en turtlebot3_house.world, que añade las mochilas y tal
 - El modelo 3D de las mochilas se ha descargado de X y modificado luego (esto no hace falta pq no lo he mencionado en el TFG)
 
-'''
-class hola()
-'''
+
+Explicar en algún lado que la carpeta tfg hay que clonarla e introducirla en el workspace donde se haya instalado darknet
+
+En el .bashrc, meter el export... y el source devel del workspace de darknet.
