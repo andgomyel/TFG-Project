@@ -1,0 +1,11 @@
+<launch>
+    
+    <include file="$(find tfg)/launch/spawn_robots.launch"/>
+    
+    <include file="$(find tfg)/launch/robots_multi_slam.launch"/>
+    
+    <include file="$(find tfg)/launch/robots_move_base.launch"/>
+
+
+    <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find multirobot_p3)/launch/config.rviz"/> -->
+</launch>

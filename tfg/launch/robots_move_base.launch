@@ -1,0 +1,39 @@
+<launch>
+    <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+
+    <arg name="robot1_name" default="tb3_0"/>
+    <arg name="robot2_name" default="tb3_1"/>
+    <arg name="robot3_name" default="tb3_2"/>
+
+    <!-- ROBOT 1 -->
+    <group ns="$(arg robot1_name)">
+        <param name="tf_prefix" value="$(arg robot1_name)" />
+        <include file="$(find tfg)/launch/one_robot_move_base.launch" >
+            <arg name="robot_name" value="$(arg robot1_name)" />
+            <!-- <arg name="cmd_vel_topic" value="/$(arg robot1_name)/cmd_vel"/>
+            <arg name="odom_topic" value="/$(arg robot1_name)/odom"/> -->
+        </include>
+    </group>
+
+    <!-- ROBOT 2 -->
+    <group ns="$(arg robot2_name)">
+        <param name="tf_prefix" value="$(arg robot2_name)" />
+        <include file="$(find tfg)/launch/one_robot_move_base.launch" >
+            <arg name="robot_name" value="$(arg robot2_name)" />
+            <!-- <arg name="cmd_vel_topic" value="/$(arg robot2_name)/cmd_vel"/>
+            <arg name="odom_topic" value="/$(arg robot2_name)/odom"/> -->
+        </include>
+    </group>
+
+
+    <!-- ROBOT 3 -->
+    <group ns="$(arg robot3_name)">
+        <param name="tf_prefix" value="$(arg robot3_name)" />
+        <include file="$(find tfg)/launch/one_robot_move_base.launch" >
+            <arg name="robot_name" value="$(arg robot3_name)" />
+            <!-- <arg name="cmd_vel_topic" value="/$(arg robot3_name)/cmd_vel"/>
+            <arg name="odom_topic" value="/$(arg robot3_name)/odom"/> -->
+        </include>
+    </group>
+
+</launch>
