@@ -50,7 +50,7 @@ class robot_controller():
         tmp = [msg.point.x, msg.point.y, msg.point.z]
         self.init_poses.append(tmp)
 
-    def allPosesDefined(self):
+    def PoseDefined(self):
 
         return True if len(self.init_poses) == self.ID+1  else False
 
@@ -93,7 +93,7 @@ class robot_controller():
 
             print("[#] Enter initial position for robot tb3_"+str(self.ID)+" in RViz")
 
-            while self.allPosesDefined() == False:
+            while self.PoseDefined() == False:
                 None
 
             print("[#] Getting robot tb3_"+str(self.ID)+" to initial pos...")
@@ -111,15 +111,12 @@ class robot_controller():
 
         if self.client.get_state() is GoalStatus.SUCCEEDED and self.ready == False:
             self.ready = True
-            # self.new_init_pose = True
             print("[#] Robot tb3_"+str(self.ID)+" ready")
-            # self.init_poses = []
 
     def stop(self):    
         pose = self.getCurrentPos()
         self.goToGoal(pose)
         self.new_goal=True
-        # self.client.cancel_goal()explor
 
     def stop_exploring(self):
         nodes = os.popen("rosnode list").readlines()
@@ -142,7 +139,6 @@ class robot_controller():
 
     def EXPLORE(self):
         print("[#] Exploring environment...")
-        # os.system("roslaunch explore_lite explore.launch > /dev/null")
         os.system("ROS_NAMESPACE=tb3_"+str(self.ID) + " roslaunch explore_lite explore.launch costmap_topic:=/map costmap_updates_topic:=/map_updates robot_base_frame:=tb3_"+str(self.ID)+"/base_link > /dev/null")
 
 
