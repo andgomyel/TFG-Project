@@ -1,7 +1,5 @@
 # TFG-Project
-This git contains the Final Project for Robotics Engineering Degree, which implements a Multi-Robot System solution to perform environment efficient exlploration and mapping, as well as real-time object detection.
-
-This project was developed as my Final Project in Robots Engineering Degree in the University of Alicante.
+This work was developed as my Final Project in Robots Engineering Degree in the University of Alicante. It proposes a Multi-Robot System to perform environment efficient exploration an mapping, as well as real-time object detection. The code contains the implementation of a Multi-Robot System
 
 # Index
 - Intro
