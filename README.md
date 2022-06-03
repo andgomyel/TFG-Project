@@ -14,6 +14,8 @@ This work was developed as my Final Project in Robots Engineering Degree in the 
 ## Project background <a name="p1"/>
 The aim of this work is to design and develop a Multi-Robot based solution to solve a determinate task: identifying dangerous objects in an unknown environment. Specifically, the aim is to launch a group of robots into a specific place where there is a terrorist threat (or a danger of this kind, in general), to search for objects suspected of being explosives, such as backpacks or suitcases.
 
+To this end, SLAM and efficient exploration algorithms are needed, as well as an object detection method to perform object recognition in real time.
+
 ## Installation <a name="p2"/>
 
 
@@ -31,6 +33,9 @@ The aim of this work is to design and develop a Multi-Robot based solution to so
 
 
 ## How to use <a name="p6"//>
+Once you have all the required features installed, ...
+
+
 
 - Hardware and software requirements
 - Uso de paquetes de ros para la navegación, mapeado... (poner los roslaunch en plan bonito y explicar qué lanza cada uno, quizá en un apartado de cómo usar)
