@@ -1,0 +1,12 @@
+<launch>
+    <param name="/use_sim_time" value="true" />
+    
+    <!-- start world -->
+    <node name="gazebo" pkg="gazebo_ros" type="gazebo"
+          args="$(find tfg)/worlds/my_world.world" respawn="false" output="screen" />
+<!-- /home/andresgomez/mod_house.world" -->
+    <!-- include our robots -->
+    <include file="$(find tfg)/launch/robots.launch"/>
+    
+    <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find multirobot_p3)/launch/config.rviz"/> -->
+</launch>
