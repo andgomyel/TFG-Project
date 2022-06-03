@@ -2,6 +2,9 @@
 This work was developed as my Final Project in Robots Engineering Degree in the University of Alicante. It proposes a Multi-Robot System to perform environment efficient exploration an mapping, as well as real-time object detection. The code contains the implementation of a Multi-Robot System
 
 ## Index
+- [1.   Software and hardware reuirements](#p1)
+
+
 - Hardware and software requirements
 - Uso de paquetes de ros para la navegación, mapeado... (poner los roslaunch en plan bonito y explicar qué lanza cada uno, quizá en un apartado de cómo usar)
 
