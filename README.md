@@ -69,7 +69,7 @@ $ export TURTLEBOT3_MODEL=waffle > ~/.bashrc
 
 TurtleBot3 simulation package includes SLAM, map merging and frontier exploration packages.
 
-For object detection, ```darknet_ros``` package was used to process images coming from robots cameras with YOLO detector. Installing instructions can be found at [darknet_ros Github repository](https://github.com/leggedrobotics/darknet_ros). As suggested there, using ```catkin build``` instead of ```catkin_make``` provides a better building pipeline. 
+For object detection, ```darknet_ros``` package was used to process incoming images from robots cameras with YOLO detector. Installing instructions can be found at [darknet_ros Github repository](https://github.com/leggedrobotics/darknet_ros). As suggested there, using ```catkin build``` instead of ```catkin_make``` provides a better building pipeline. 
 
 As mentioned before, CUDA framework must be used to perform object detection in real time. To use GPU parallel computing using CUDA, you need to install/update:
 - NVIDIA CUDA Toolkit. The most recent version (```11.7```) was used. Follow these [instructions](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html) provided by NVIDIA.
