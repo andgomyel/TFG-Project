@@ -17,7 +17,10 @@ The aim of this work is to design and develop a Multi-Robot based solution to so
 To this end, SLAM and efficient exploration algorithms are needed, as well as an object detection method to perform object recognition in real time. In this project, some state-of-the-art methods are applied to carry out such tasks.
 
 
-## No se qué titulo poner
+## Followed approach 
+- Explicar pòr encima lo que se ha pensado (máquina + interfaz), y lo que se ha necesitado para ello.
+
+- Foto de la máquina de estados y la interfaz
 Decir aquí que necesitamos:
 - Algoritmo de SLAM Gmapping
 - Algoritmo de map merging
@@ -29,10 +32,13 @@ In order to execute the developed application using the above codes, one needs t
 
 
 ## Hardware and software requirements <a name="p3"/>
-Due to the usage of neural network models to perform object detection in several robot cameras in real time, a GPU is required, as is a quite powerful processor. To develop this project, 
+Due to the usage of neural network models to perform object detection in several images in real time, a GPU is required, as is a quite powerful processor.
+Below are the main specs of the PC used to develop this project:
 
+- CPU: 12 core Intel(R) Core(TM) i7-8750H CPU 2.20GHz
+- GPU: Nvidia GeForce GTX 1070
 
-The entire project has been developed using ROS Noetic in Ubuntu 20.04.4, and hasn't been tested in another distros or ROS versions, so it is recommended to 
+The entire project has been developed using ROS Noetic in Ubuntu 20.04.4, and hasn't been tested in another distros or ROS versions, so it is recommended to use the application using these versions for a suitable functioning.
 
 
 ## Previous needed libraries <a name="p4"/>
