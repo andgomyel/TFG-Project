@@ -8,7 +8,7 @@ This work was developed as my Final Project in Robots Engineering Degree in the 
 - Hardware and software requirements
 - Uso de paquetes de ros para la navegación, mapeado... (poner los roslaunch en plan bonito y explicar qué lanza cada uno, quizá en un apartado de cómo usar)
 
-# Related features installation
+## Related features installation <a name="p1"/>
 - darknet_ros
 
 ```
