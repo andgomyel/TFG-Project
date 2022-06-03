@@ -170,11 +170,10 @@ Step 4 may be skkiped if you don't need to use object detection, and bounding bo
 
 ## Demo <a name="p7"/>
 You can find a video demo of how does the developed work [here](https://www.youtube.com/watch?v=QfGfMR_f1rI).
+[![Now in Android: 55]          // Title
+(https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg)] // Thumbnail
+(https://www.youtube.com/watch?v=QfGfMR_f1rI "Coordinate control of mobile robots in unknown environments")    // Video Link
 
-
-# Environment setup
-- Se ha creado un entorno (.world) basado en turtlebot3_house.world, que añade las mochilas y tal
-- El modelo 3D de las mochilas se ha descargado de X y modificado luego (esto no hace falta pq no lo he mencionado en el TFG)
 
 
 
