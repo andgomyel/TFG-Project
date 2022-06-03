@@ -169,7 +169,7 @@ Step 4 may be skkiped if you don't need to use object detection, and bounding bo
 
 
 ## Demo <a name="p7"/>
-You can find a video demo of how does the developed work [here](https://www.youtube.com/watch?v=QfGfMR_f1rI).
+You can find a video demo of how does the developed application works [here](https://www.youtube.com/watch?v=QfGfMR_f1rI).
 
 
 
