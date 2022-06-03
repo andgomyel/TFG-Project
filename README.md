@@ -1,4 +1,4 @@
-# TFG-Project
+# Coordinate control of mobile robots in an unknown environment
 This work was developed as my Final Project in Robots Engineering Degree in the University of Alicante. It proposes a Multi-Robot System to perform environment efficient exploration an mapping, as well as real-time object detection. The code contains the implementation of a Multi-Robot System
 
 ## Index
