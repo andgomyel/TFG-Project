@@ -118,7 +118,40 @@ By this time, the project is ready to be executed. It takes some steps.
 $ roslaunch tfg spawn_robots.launch
 ```
 
+2. Start SLAM and map merging algorithms and open RViz visualization:
+```
+# Terminal window 2
+$ roslaunch tfg robots_multi_slam.launch
+```
 
+3. Start ROS navigation stack:
+```
+# Terminal window 3
+$ roslaunch tfg robots_move_base.launch
+```
+
+4. Charge pretrained YOLO complete network model for each TurtleBot camera:
+```
+# Terminal window 4
+$ ROS_NAMESPACE=tb3_0 roslaunch tfg darknet_ros_tfg.launch image:=/tb3_0/camera/rgb/image_raw param_file:=ros0.yaml
+
+# Terminal window 5
+$ ROS_NAMESPACE=tb3_1 roslaunch tfg darknet_ros_tfg.launch image:=/tb3_1/camera/rgb/image_raw param_file:=ros1.yaml
+
+# Terminal window 6
+$ ROS_NAMESPACE=tb3_2 roslaunch tfg darknet_ros_tfg.launch image:=/tb3_2/camera/rgb/image_raw param_file:=ros2.yaml
+```
+
+5. Execute state machine and open graphical interface:
+```
+# Terminal window 7
+$ python ~/catkin_ws/src/tfg/src/my_interface.py
+```
+
+When all of these commands have been executed, your screen should look like this:
+<p align="center">
+  <img src="display/screen.png" alt="animated"/>
+</p>
 
 ## Demo <a name="p7"/>
 You can find a video demo of how does the developed work [here](https://www.youtube.com/watch?v=QfGfMR_f1rI).
