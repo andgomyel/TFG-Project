@@ -39,7 +39,7 @@ Below are the main specs of the PC used to develop this project:
 - GPU: Nvidia GeForce GTX 1070 8 GB GDDR5
 - 16 GB RAM
 
-The entire project has been developed using ROS Noetic in Ubuntu 20.04.4, and hasn't been tested in another distros or ROS versions, so it is recommended using these versions for a suitable functioning. ROS Noetic installing instructions can be found [here](http://wiki.ros.org/noetic/Installation/Ubuntu). ```desktop-full``` version must be installed to acquire all the graphical tools needed.
+The entire project has been developed using ROS Noetic in Ubuntu 20.04.4, and hasn't been tested in another distros or ROS versions, so it is recommended using these versions for a suitable functioning. ROS Noetic installing instructions can be found [here](http://wiki.ros.org/noetic/Installation/Ubuntu). (```desktop-full``` version must be installed to acquire all the graphical tools needed)
 
 
 ## Previous needed libraries <a name="p4"/>
@@ -47,9 +47,19 @@ This project requires some packages or libraries to be installed before running 
 
 First of all, TurtleBot3 ROS package was used to simulate the envornment and the robots in Gazebo. Here are the instructions followed for its installation:
 ```
+sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy \
+  ros-noetic-teleop-twist-keyboard ros-noetic-laser-proc \
+  ros-noetic-rgbd-launch ros-noetic-rosserial-arduino \
+  ros-noetic-rosserial-python ros-noetic-rosserial-client \
+  ros-noetic-rosserial-msgs ros-noetic-amcl ros-noetic-map-server \
+  ros-noetic-move-base ros-noetic-urdf ros-noetic-xacro \
+  ros-noetic-compressed-image-transport ros-noetic-rqt* ros-noetic-rviz \
+  ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers
 
-
-
+  sudo apt install ros-noetic-dynamixel-sdk
+  sudo apt install ros-noetic-turtlebot3-msgs
+  sudo apt install ros-noetic-turtlebot3
+  sudo apt install ros-noetic-turtlebot3-simulations
 ```
 
 
