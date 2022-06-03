@@ -119,6 +119,9 @@ To avoid updating workspace dependencies every time you open a new terminal, I s
 source ~/catkin_ws/devel/setup.bash
 ```
 
+Finally, copy the files inside folder ```~/catkin_ws/src/tfg/yolo_network_config``` of this package into ```~/catkin_ws/src/darknet_ros/darknet_ros/config```.
+
+
 ## How to use <a name="p6"/>
 By this time, the project is ready to be executed. It takes some steps.
 1. Launch Gazebo environment and spawn 3 TurtleBot3 robots:
