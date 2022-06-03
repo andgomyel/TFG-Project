@@ -18,6 +18,8 @@ To this end, SLAM and efficient exploration algorithms are needed, as well as an
 
 
 ## Followed approach 
+
+To solve the task presented above, a
 - Explicar pòr encima lo que se ha pensado (máquina + interfaz), y lo que se ha necesitado para ello.
 
 - Foto de la máquina de estados y la interfaz
@@ -105,7 +107,14 @@ $ pip install PyQt5
 ```
 
 ### Project installation <a name="p5"/>
-After configuring the needed libraries and packages with the above instructions, you are ready to try the application developed. The first step is cloning this repo in ```~/catkin_ws/src``` (the same workspace where you installed ```darknet_ros```) and builing the new package. To avoid updating workspace dependencies every time you open a new terminal, I suggest including the following line in ```~/.bashrc``` file:
+After configuring the needed libraries and packages with the above instructions, you are ready to try the application developed. The first step is cloning this repo in ```~/catkin_ws/src``` (the same workspace where you installed ```darknet_ros```) and builing the new package:
+```
+$ cd ~/catkin_ws/src
+$ git clone https://github.com/andgomyel/TFG-Project
+$ cd .. & catkin build
+```
+
+To avoid updating workspace dependencies every time you open a new terminal, I suggest including the following line in ```~/.bashrc``` file:
 ```
 source ~/catkin_ws/devel/setup.bash
 ```
