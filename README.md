@@ -110,7 +110,7 @@ $ pip install PyQt5
 After configuring the needed libraries and packages with the above instructions, you are ready to try the application developed. The first step is cloning this repo in ```~/catkin_ws/src``` (the same workspace where you installed ```darknet_ros```) and builing the new package:
 ```
 $ cd ~/catkin_ws/src
-$ git clone https://github.com/andgomyel/TFG-Project
+$ git clone https://github.com/andgomyel/TFG-Project.git
 $ cd .. & catkin build
 ```
 
