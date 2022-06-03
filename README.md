@@ -130,7 +130,7 @@ $ roslaunch tfg robots_multi_slam.launch
 $ roslaunch tfg robots_move_base.launch
 ```
 
-4. Charge pretrained YOLO complete network model for each TurtleBot camera:
+4. Load pretrained YOLO complete network model for each TurtleBot camera:
 ```
 # Terminal window 4
 $ ROS_NAMESPACE=tb3_0 roslaunch tfg darknet_ros_tfg.launch image:=/tb3_0/camera/rgb/image_raw param_file:=ros0.yaml
@@ -152,6 +152,9 @@ When all of these commands have been executed, your screen should look like this
 <p align="center">
   <img src="display/screen.png" alt="animated"/>
 </p>
+
+Step 4 may be skkiped if you don't need to use object detection, and bounding boxes won't appear in the interface images.
+
 
 ## Demo <a name="p7"/>
 You can find a video demo of how does the developed work [here](https://www.youtube.com/watch?v=QfGfMR_f1rI).
