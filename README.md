@@ -39,7 +39,7 @@ Below are the main specs of the PC used to develop this project:
 - GPU: Nvidia GeForce GTX 1070 8 GB GDDR5
 - 16 GB RAM
 
-The entire project has been developed using ROS Noetic in Ubuntu 20.04.4, and hasn't been tested in another distros or ROS versions, so it is recommended using these versions for a suitable functioning.
+The entire project has been developed using ROS Noetic in Ubuntu 20.04.4, and hasn't been tested in another distros or ROS versions, so it is recommended using these versions for a suitable functioning. ROS Noetic installing instructions can be found [paquete](http://wiki.ros.org/noetic/Installation/Ubuntu)
 
 
 ## Previous needed libraries <a name="p4"/>
