@@ -39,18 +39,28 @@ Below are the main specs of the PC used to develop this project:
 - GPU: Nvidia GeForce GTX 1070 8 GB GDDR5
 - 16 GB RAM
 
-The entire project has been developed using ROS Noetic in Ubuntu 20.04.4, and hasn't been tested in another distros or ROS versions, so it is recommended to use the application using these versions for a suitable functioning.
+The entire project has been developed using ROS Noetic in Ubuntu 20.04.4, and hasn't been tested in another distros or ROS versions, so it is recommended using these versions for a suitable functioning.
 
 
 ## Previous needed libraries <a name="p4"/>
+This project requires some packages or libraries to be installed before running the application. 
+
+First of all, TurtleBot3 ROS package was used to simulate the envornment and the robots in Gazebo. Here are the instructions followed for its installation:
+```
 
 
 
-## Project installation <a name="p5"//>
+```
+
+
+First of all, OpenCV was used for 
+
+
+## Project installation <a name="p5"/>
 
 
 
-## How to use <a name="p6"//>
+## How to use <a name="p6"/>
 Once you have all the required features installed, ...
 
 
