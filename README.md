@@ -47,7 +47,7 @@ This project requires some packages or libraries to be installed before running 
 
 First of all, TurtleBot3 ROS package was used to simulate the envornment and the robots in Gazebo. Here are the instructions followed for its installation:
 ```
-sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy \
+$ sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy \
   ros-noetic-teleop-twist-keyboard ros-noetic-laser-proc \
   ros-noetic-rgbd-launch ros-noetic-rosserial-arduino \
   ros-noetic-rosserial-python ros-noetic-rosserial-client \
@@ -56,14 +56,22 @@ sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy \
   ros-noetic-compressed-image-transport ros-noetic-rqt* ros-noetic-rviz \
   ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers
 
-  sudo apt install ros-noetic-dynamixel-sdk
-  sudo apt install ros-noetic-turtlebot3-msgs
-  sudo apt install ros-noetic-turtlebot3
-  sudo apt install ros-noetic-turtlebot3-simulations
+$ sudo apt install ros-noetic-dynamixel-sdk
+$ sudo apt install ros-noetic-turtlebot3-msgs
+$ sudo apt install ros-noetic-turtlebot3
+$ sudo apt install ros-noetic-turtlebot3-simulations
 ```
 
+After installing TurtleBot3 simulator, execute the following line in command terminal to set ROS environment variables:
+```
+$ export TURTLEBOT3_MODEL=waffle > ~/.bashrc
+```
 
-First of all, OpenCV was used for 
+TurtleBot3 simulation package includes SLAM, map merging and frontier exploration packages.
+
+
+
+You also need OpenCV library to extract the image provided by the robots cameras from ROS topics. OpenCV will be used in background to forward pass the images through YOLO to perform object detection. Furthermore, using CUDA requires some OpenCV modules 
 
 
 ## Project installation <a name="p5"/>
