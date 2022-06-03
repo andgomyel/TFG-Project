@@ -94,7 +94,7 @@ Once you have installed these features, check your CUDA architecture [here](http
 -O3 -gencode arch=compute_61,code=sm_61
 ```
 
-At this time, you should have completely configured your system to run YOLO detector on GPU using ```darknet_ros```.
+At this point, you should have completely configured your system to run YOLO detector on GPU using ```darknet_ros```.
 
 
 Only 2 more steps are left to end the installation. To code the explained state machine, Smach libray was used. To design and develop the visual interface, PyQt5 library for graphical applications was used. Below are the commands to respectively install such libraries.
@@ -111,7 +111,12 @@ source ~/catkin_ws/devel/setup.bash
 ```
 
 ## How to use <a name="p6"/>
-Once you have all the required features installed, ...
+By this time, the project is ready to be executed. It takes some steps.
+1. Launch Gazebo environment and spawn 3 TurtleBot3 robots:
+```
+# Terminal window 1
+$ roslaunch tfg spawn_robots.launch
+```
 
 
 
