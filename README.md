@@ -43,6 +43,7 @@ The entire project has been developed using ROS Noetic in Ubuntu 20.04.4, and ha
 
 
 ### Previous needed libraries <a name="p4"/>
+
 This project requires some packages or libraries to be installed before running the application. 
 
 First of all, TurtleBot3 ROS package was used to simulate the envornment and the robots in Gazebo. Here are the instructions followed for its installation:
@@ -78,7 +79,7 @@ As mentioned before, CUDA framework must be used to perform object detection in 
 - NVIDIA CUDA Toolkit. The most recent version (```11.7```) was used. Follow these [instructions](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html) provided by NVIDIA.
 - cuDNN (NVIDIA CUDA Deep Neural Networks Library). Installation guida can be found [here](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html)
 
-After installing CUDA Toolkit and cuDNN, execute this command in Linux terminal (I had problems if I didnt't execute it when pretending to use CUDA):
+After installing CUDA Toolkit and cuDNN, execute this command in Linux terminal (I had problems if I didnt't execute it when pretending to use CUDA with ```darknet_ros```):
 ```
 export PATH=/usr/local/cuda-11.7/bin${PATH:+:${PATH}} > ~/.bashrc
 ```
@@ -88,8 +89,19 @@ You also need OpenCV library to extract the image provided by the robots cameras
 $ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D INSTALL_PYTHON_EXAMPLES=ON -D	INSTALL_C_EXAMPLES=OFF -D OPENCV_ENABLE_NONFREE=ON -D WITH_CUDA=ON -D WITH_CUDNN=ON -D OPENCV_DNN_CUDA=ON -D 			ENABLE_FAST_MATH=1 -D CUDA_FAST_MATH=1 -D CUDA_ARCH_BIN=6.1 -D WITH_CUBLAS=1 -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules -D HAVE_opencv_python3=ON ..
 ```
 
+Once you have installed these features, check your CUDA architecture [here](https://developer.nvidia.com/cuda-gpus) (in my case, it is 6.1). Then, check ```~/catkin_ws/src/darknet_ros/darknet_ros/CMakeLists.txt``` and add a line like this (it is already mentioned in ```darknet_ros``` repo, but I had some issues with that setup):
 ```
-pip install PyQt5
+-O3 -gencode arch=compute_61,code=sm_61
+```
+
+At this time, you should have completely configured your system to run YOLO detector on GPU using ```darknet_ros```.
+
+
+Only 2 more steps are left to end the installation. To code the explained state machine, Smach libray was used. To design and develop the visual interface, PyQt5 library for graphical applications was used. Below are the commands to respectively install such libraries.
+
+```
+$ sudo apt-get install ros-noetic-smach-ros
+$ pip install PyQt5
 ```
 
 ### Project installation <a name="p5"/>
