@@ -115,26 +115,8 @@ Once you have all the required features installed, ...
 
 
 
-- Hardware and software requirements
-- Uso de paquetes de ros para la navegación, mapeado... (poner los roslaunch en plan bonito y explicar qué lanza cada uno, quizá en un apartado de cómo usar)
-
-## Related features installation <a name="p1"/>
-- darknet_ros
-
-```
-$ source devel/setup.bash
-```
-
-# Previous needed libraries
-- ROS Noetic
-- Todo el paquete del TB3 (robots móviles)
-- OpenCV, en su versión 4.4 a ser posible, pues es la más actualizada, para evitar incompatibilidades con los módulos de CUDA.
-
-
-
-# Used PC datasheet
-- Nvidia GTX 1070
-- Intel Core i7
+## Demo <a name="p7"/>
+You can find a video demo of how does the developed work [here](https://www.youtube.com/watch?v=QfGfMR_f1rI).
 
 
 # Environment setup
@@ -142,10 +124,4 @@ $ source devel/setup.bash
 - El modelo 3D de las mochilas se ha descargado de X y modificado luego (esto no hace falta pq no lo he mencionado en el TFG)
 
 
-Explicar en algún lado que la carpeta tfg hay que clonarla e introducirla en el workspace donde se haya instalado darknet
-
-En el .bashrc, meter el export... y el source devel del workspace de darknet.
-
-
-## How to use
 
