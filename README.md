@@ -36,7 +36,7 @@ Due to the usage of neural network models to perform object detection in several
 Below are the main specs of the PC used to develop this project (these are the minimum neccessary requirements, more powerful GPU is recommended):
 
 - CPU: 12 core Intel(R) Core(TM) i7-8750H CPU 2.20GHz
-  - GPU: NVIDIA GeForce GTX 1070 8 GB GDDR5
+- GPU: NVIDIA GeForce GTX 1070 8 GB GDDR5
 - 16 GB RAM
 
 The entire project has been developed using ROS Noetic in Ubuntu 20.04.4, and hasn't been tested in another distros or ROS versions, so it is recommended using these versions for a suitable functioning. ROS Noetic installing instructions can be found [here](http://wiki.ros.org/noetic/Installation/Ubuntu). (```desktop-full``` version must be installed to acquire all the graphical tools needed)
