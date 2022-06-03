@@ -8,6 +8,7 @@ This work was developed as my Final Project in Robots Engineering Degree in the 
 # Related features installation
 - darknet_ros
 
+$ source devel/setup.bash
 
 # Previous needed libraries
 - ROS Noetic
