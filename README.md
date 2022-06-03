@@ -31,7 +31,7 @@ Decir aquí que necesitamos:
 In order to execute the developed application using the above codes, one needs to install some required frameworks and libraries previously.
 
 
-## Hardware and software requirements <a name="p3"/>
+### Hardware and software requirements <a name="p3"/>
 Due to the usage of neural network models to perform object detection in several images in real time, a GPU is required, as is a quite powerful processor.
 Below are the main specs of the PC used to develop this project (these are the minimum neccessary requirements, more powerful GPU is recommended):
 
@@ -42,7 +42,7 @@ Below are the main specs of the PC used to develop this project (these are the m
 The entire project has been developed using ROS Noetic in Ubuntu 20.04.4, and hasn't been tested in another distros or ROS versions, so it is recommended using these versions for a suitable functioning. ROS Noetic installing instructions can be found [here](http://wiki.ros.org/noetic/Installation/Ubuntu). (```desktop-full``` version must be installed to acquire all the graphical tools needed)
 
 
-## Previous needed libraries <a name="p4"/>
+### Previous needed libraries <a name="p4"/>
 This project requires some packages or libraries to be installed before running the application. 
 
 First of all, TurtleBot3 ROS package was used to simulate the envornment and the robots in Gazebo. Here are the instructions followed for its installation:
@@ -83,7 +83,7 @@ $ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D INSTAL
 
 
 
-## Project installation <a name="p5"/>
+### Project installation <a name="p5"/>
 
 
 
