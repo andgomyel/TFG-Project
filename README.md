@@ -89,7 +89,7 @@ You also need OpenCV library to extract the image provided by the robots cameras
 $ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D INSTALL_PYTHON_EXAMPLES=ON -D	INSTALL_C_EXAMPLES=OFF -D OPENCV_ENABLE_NONFREE=ON -D WITH_CUDA=ON -D WITH_CUDNN=ON -D OPENCV_DNN_CUDA=ON -D 			ENABLE_FAST_MATH=1 -D CUDA_FAST_MATH=1 -D CUDA_ARCH_BIN=6.1 -D WITH_CUBLAS=1 -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules -D HAVE_opencv_python3=ON ..
 ```
 
-Once you have installed these features, check your CUDA architecture [here](https://developer.nvidia.com/cuda-gpus) (in my case, it is 6.1). Then, check ```~/catkin_ws/src/darknet_ros/darknet_ros/CMakeLists.txt``` and add a line like this (it is already mentioned in ```darknet_ros``` repo, but I had some issues with that setup):
+Once you have installed these features, check your CUDA architecture [here](https://developer.nvidia.com/cuda-gpus) (in my case, it is 6.1). Then, go to ```~/catkin_ws/src/darknet_ros/darknet_ros/CMakeLists.txt``` file and build the workspace after adding a line like this (it is already mentioned in ```darknet_ros``` repo, but I had some issues with that setup):
 ```
 -O3 -gencode arch=compute_61,code=sm_61
 ```
@@ -105,8 +105,10 @@ $ pip install PyQt5
 ```
 
 ### Project installation <a name="p5"/>
-After configuring the needed libraries and packages with the above instructions, you are ready to try the application developed. The first step is cloning this repo in ```~/catkin_ws/src``` (the same workspace where you installed ```darknet_ros```).
-
+After configuring the needed libraries and packages with the above instructions, you are ready to try the application developed. The first step is cloning this repo in ```~/catkin_ws/src``` (the same workspace where you installed ```darknet_ros```) and builing the new package. To avoid updating workspace dependencies every time you open a new terminal, I suggest including the following line in ```~/.bashrc``` file:
+```
+source ~/catkin_ws/devel/setup.bash
+```
 
 ## How to use <a name="p6"/>
 Once you have all the required features installed, ...
