@@ -19,15 +19,15 @@ To this end, SLAM and efficient exploration algorithms are needed, as well as an
 
 ## Followed approach 
 
-To solve the task presented above, a
-- Explicar pòr encima lo que se ha pensado (máquina + interfaz), y lo que se ha necesitado para ello.
+To solve the task presented above through a Multi-Robot System, a state machine and a graphical interface were desgined to control the group of robots and monitorize its state.
 
-- Foto de la máquina de estados y la interfaz
-Decir aquí que necesitamos:
-- Algoritmo de SLAM Gmapping
-- Algoritmo de map merging
-- Algoritmo de frontier exploration
-- Detector de objetos YOLO
+The state machine desgined looks like this:
+<p align="center">
+  <img src="display/state_machine.png" alt="animated"/>
+</p>
+
+When the application is executed, the robots are on "Wait" state, until initializing order is received. When in "Initialize", the user must introduce the pose where the robots will begin their exploration. Thus, a "guided exploration" is achieved, accelerating exploration by sending each robot to a different region of the environment. While robots explore, they run an object detector, performing object recognition of the areas they visit. Once exploration ends or user tells robots to return to launching area, all of them return to Home position and application ends.
+
 
 ## Installation <a name="p2"/>
 In order to execute the developed application using the above codes, one needs to install some required frameworks and libraries previously.
@@ -160,7 +160,7 @@ $ ROS_NAMESPACE=tb3_2 roslaunch tfg darknet_ros_tfg.launch image:=/tb3_2/camera/
 $ python ~/catkin_ws/src/tfg/src/my_interface.py
 ```
 
-When all of these commands have been executed, your screen should look like this:
+When all of these commands have been executed, your screen should look like this (Gazebo window would be in background, too):
 <p align="center">
   <img src="display/screen.png" alt="animated"/>
 </p>
@@ -170,9 +170,6 @@ Step 4 may be skkiped if you don't need to use object detection, and bounding bo
 
 ## Demo <a name="p7"/>
 You can find a video demo of how does the developed work [here](https://www.youtube.com/watch?v=QfGfMR_f1rI).
-[![Now in Android: 55]          // Title
-(https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg)] // Thumbnail
-(https://www.youtube.com/watch?v=QfGfMR_f1rI "Coordinate control of mobile robots in unknown environments")    // Video Link
 
 
 
